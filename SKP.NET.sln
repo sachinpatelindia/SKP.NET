@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKP.NET.WEB", "SKP.NET.WEB\SKP.NET.WEB.csproj", "{45B02A8C-B5CF-4641-AEC8-A7FAF70D1DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B02A8C-B5CF-4641-AEC8-A7FAF70D1DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B02A8C-B5CF-4641-AEC8-A7FAF70D1DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B02A8C-B5CF-4641-AEC8-A7FAF70D1DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B02A8C-B5CF-4641-AEC8-A7FAF70D1DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75454E17-1EAF-4552-84E9-AB83EBE031A9}
+	EndGlobalSection
+EndGlobal
