@@ -42,6 +42,15 @@ namespace SKP.NET.WEB.Controllers
                 Title = "HTML",
                 FullDescription = "<table>\r\n  <tr>\r\n    <th>Company</th>\r\n    <th>Contact</th>\r\n    <th>Country</th>\r\n  </tr>\r\n  <tr>\r\n    <td>Alfreds Futterkiste</td>\r\n    <td>Maria Anders</td>\r\n    <td>Germany</td>\r\n  </tr>\r\n  <tr>\r\n    <td>Centro comercial Moctezuma</td>\r\n    <td>Francisco Chang</td>\r\n    <td>Mexico</td>\r\n  </tr>\r\n</table>"
             });
+
+            _pageModels.Add(new PageModel
+            {
+                Id = 3,
+                Author = "sk",
+                CreatedOn = DateTime.Now,
+                Title = "CSharp",
+                FullDescription = "<div class=\"w3-example\">\r\n<h3>Example</h3>\r\n<pre class=\" w3-white language-csharp\"><code class=\" language-csharp\"><span class=\"token keyword keyword-int\">int</span> myNum <span class=\"token operator\">=</span> <span class=\"token number\">5</span><span class=\"token punctuation\">;</span>               <span class=\"token comment\">// Integer (whole number)</span>\r\n<span class=\"token keyword keyword-double\">double</span> myDoubleNum <span class=\"token operator\">=</span> <span class=\"token number\">5.99</span>D<span class=\"token punctuation\">;</span>  <span class=\"token comment\">// Floating point number</span>\r\n<span class=\"token keyword keyword-char\">char</span> myLetter <span class=\"token operator\">=</span> <span class=\"token string\">'D'</span><span class=\"token punctuation\">;</span>         <span class=\"token comment\">// Character</span>\r\n<span class=\"token keyword keyword-bool\">bool</span> myBool <span class=\"token operator\">=</span> <span class=\"token keyword keyword-true\">true</span><span class=\"token punctuation\">;</span>          <span class=\"token comment\">// Boolean</span>\r\n<span class=\"token keyword keyword-string\">string</span> myText <span class=\"token operator\">=</span> <span class=\"token string\">\"Hello\"</span><span class=\"token punctuation\">;</span>     <span class=\"token comment\">// String</span>\r\n</code></pre>\r\n<p>\r\n<a target=\"_blank\" class=\"w3-btn\" href=\"trycs.php?filename=demo_data_types\">Try it Yourself »</a>\r\n</p>\r\n</div>"
+            });
             return _pageModels;
         }
     }
