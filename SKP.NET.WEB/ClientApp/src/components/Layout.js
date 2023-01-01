@@ -1,12 +1,12 @@
-import NavBar  from './NavMenu';
+import NavBar from './NavMenu';
 
-const Layout = ({children })=> {
+const Layout = ({ children }) => {
     const navbar = {};
     navbar.brand =
-        { linkTo: "#", text: "React Bootstrap Navbar" };
+        { linkTo: "/", text: "React Bootstrap Navbar" };
     navbar.links = [
-        { linkTo: "#", text: "Link 1" },
-        { linkTo: "#", text: "Link 2" },
+        { linkTo: "/", text: "Home" },
+        { linkTo: "/counter", text: "Counter" },
         {
             dropdown: true, text: "Dropdown", links: [
                 { linkTo: "#", text: "Dropdown Link 1" },
@@ -18,9 +18,9 @@ const Layout = ({children })=> {
         <>
             <NavBar {...navbar} />
             <main className="container">
-              {children}
-        </main>
-     </>
+                {children}
+            </main>
+        </>
     );
 }
 
