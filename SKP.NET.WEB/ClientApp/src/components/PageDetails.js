@@ -1,7 +1,7 @@
-﻿import { useParams, useLocation } from "react-router-dom";
+﻿import {  useLocation } from "react-router-dom";
 
 const PageDetails = () => {
-    const { state } = useLocation();
+    const { data } = useLocation();
 
 
     const renderPage = (key) => {
@@ -17,11 +17,7 @@ const PageDetails = () => {
                 break;
         }
     }
-    const params = useParams();
-    //const { name } = params;
-    console.log(JSON.stringify(params));
-    console.log(JSON.stringify(state));
-    return (renderPage(state?.item?.id));
+    return (renderPage(data?.item?.id));
 }
 
 export default PageDetails;
