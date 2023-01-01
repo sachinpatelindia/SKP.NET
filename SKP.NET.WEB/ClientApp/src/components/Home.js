@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 const Home = () => {
-    const [ navigation, setNavigation ] = useState([]);
+    const [navigation, setNavigation] = useState([]);
     let navigate = useNavigate();
 
     useEffect(() => {
         populateWeatherData();
-    },[]);
+    }, []);
 
     const populateWeatherData = () => {
         fetch("navigations")
@@ -17,7 +17,7 @@ const Home = () => {
     };
 
     const handleLinkClick = (item) => {
-        navigate(item?.name, { data: { item } });
+        navigate(item?.name, { state: { item } });
     }
 
     return (<>This is Home page
