@@ -5,10 +5,10 @@ const Home = () => {
     let navigate = useNavigate();
 
     useEffect(() => {
-        populateWeatherData();
+        populateNavData();
     }, []);
 
-    const populateWeatherData = () => {
+    const populateNavData = () => {
         fetch("navigations")
             .then((res) => res.json())
             .then((json) => {

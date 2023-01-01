@@ -25,9 +25,9 @@ namespace SKP.NET.WEB.Controllers
         private List<NavigationModel> GetNavigationModels()
         {
             _navigationModels = new List<NavigationModel>();
-            _navigationModels.Add(new NavigationModel {Id=1, Category="article", Description="article 1 description", Name= "i-am-indian" });
-            _navigationModels.Add(new NavigationModel { Id = 2, Category = "article", Description = "article 2 description", Name = "i-am-nepali" });
-            _navigationModels.Add(new NavigationModel { Id = 3, Category = "article", Description = "article 3 description", Name = "i-am-american" });
+            _navigationModels.Add(new NavigationModel {Id=1, Category="article", Description="article 1 description", Name= "React" });
+            _navigationModels.Add(new NavigationModel { Id = 2, Category = "article", Description = "article 2 description", Name = "HTML" });
+            _navigationModels.Add(new NavigationModel { Id = 3, Category = "article", Description = "article 3 description", Name = "CS" });
             return _navigationModels;
         }
     }
